@@ -31,12 +31,14 @@ struct MWTabBarViewController : UIViewControllerRepresentable {
             let imgSel = UIImage(named: imgSels[index])?.withRenderingMode(.alwaysOriginal)//底部导航栏选中图片
             let tabBarItem = UITabBarItem(title: title, image: image, selectedImage: imgSel)//初始化UITabBarItem
             //设置字体颜色
-            tabBarItem.setTitleTextAttributes(attributes, for: .selected)
+            tabBarItem.badgeColor = UIColor.red
+            tabBarItem.badgeValue = "1"; tabBarItem.setTitleTextAttributes(attributes, for: .selected)
             vc.tabBarItem = tabBarItem
             index += 1
         }
         tabBar.viewControllers = controllers
         tabBar.delegate = context.coordinator
+        tabBar.selectedIndex = 1
         return tabBar
     }
     

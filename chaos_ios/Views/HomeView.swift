@@ -10,8 +10,13 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        Text("Home")
-        
+        NavigationView {
+            Text("Home")
+            .navigationBarTitle(Text(""), displayMode: .inline)
+            .navigationBarItems(leading:
+                    SearchBar()
+            )
+        }
     }
 }
 

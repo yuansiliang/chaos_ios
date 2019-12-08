@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163893CA239B4E510082A850 /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163893C9239B4E510082A850 /* UIColor+extension.swift */; };
+		163893CC239BA6710082A850 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163893CB239BA6710082A850 /* ActivityCell.swift */; };
+		163893CE239BA6D30082A850 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163893CD239BA6D30082A850 /* CircleImage.swift */; };
+		166F35B42399F8C7006880A9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 166F35B32399F8C7006880A9 /* SearchBar.swift */; };
+		169E0E7D2398FD55003C3669 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169E0E7C2398FD55003C3669 /* NavigationBarView.swift */; };
 		16A3BD15239744FF00FF79C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3BD14239744FF00FF79C4 /* AppDelegate.swift */; };
 		16A3BD17239744FF00FF79C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3BD16239744FF00FF79C4 /* SceneDelegate.swift */; };
 		16A3BD19239744FF00FF79C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A3BD18239744FF00FF79C4 /* ContentView.swift */; };
@@ -22,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		163893C9239B4E510082A850 /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		163893CB239BA6710082A850 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		163893CD239BA6D30082A850 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		166F35B32399F8C7006880A9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		169E0E7C2398FD55003C3669 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		16A3BD11239744FF00FF79C4 /* chaos_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chaos_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A3BD14239744FF00FF79C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16A3BD16239744FF00FF79C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		169E0E7B2398FB0B003C3669 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				169E0E7C2398FD55003C3669 /* NavigationBarView.swift */,
+				166F35B32399F8C7006880A9 /* SearchBar.swift */,
+				163893CB239BA6710082A850 /* ActivityCell.swift */,
+				163893CD239BA6D30082A850 /* CircleImage.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 		16A3BD08239744FF00FF79C4 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +98,7 @@
 				16A3BD18239744FF00FF79C4 /* ContentView.swift */,
 				16A3BD362397552100FF79C4 /* MWTabView.swift */,
 				16A3BD342397508900FF79C4 /* MWTabBarViewController.swift */,
+				163893C9239B4E510082A850 /* UIColor+extension.swift */,
 				16A3BD1A2397450000FF79C4 /* Assets.xcassets */,
 				16A3BD1F2397450100FF79C4 /* LaunchScreen.storyboard */,
 				16A3BD222397450100FF79C4 /* Info.plist */,
@@ -110,6 +132,7 @@
 		16A3BD2A2397486A00FF79C4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				169E0E7B2398FB0B003C3669 /* Widget */,
 				16A3BD2C23974A3600FF79C4 /* ShareView.swift */,
 				16A3BD2E23974F5A00FF79C4 /* HomeView.swift */,
 				16A3BD3023974F8300FF79C4 /* MessageView.swift */,
@@ -199,11 +222,16 @@
 				16A3BD3123974F8300FF79C4 /* MessageView.swift in Sources */,
 				16A3BD2D23974A3600FF79C4 /* ShareView.swift in Sources */,
 				16A3BD15239744FF00FF79C4 /* AppDelegate.swift in Sources */,
+				163893CE239BA6D30082A850 /* CircleImage.swift in Sources */,
+				163893CA239B4E510082A850 /* UIColor+extension.swift in Sources */,
 				16A3BD17239744FF00FF79C4 /* SceneDelegate.swift in Sources */,
+				169E0E7D2398FD55003C3669 /* NavigationBarView.swift in Sources */,
 				16A3BD372397552100FF79C4 /* MWTabView.swift in Sources */,
+				163893CC239BA6710082A850 /* ActivityCell.swift in Sources */,
 				16A3BD2F23974F5A00FF79C4 /* HomeView.swift in Sources */,
 				16A3BD3323974FA100FF79C4 /* ProfileView.swift in Sources */,
 				16A3BD352397508900FF79C4 /* MWTabBarViewController.swift in Sources */,
+				166F35B42399F8C7006880A9 /* SearchBar.swift in Sources */,
 				16A3BD19239744FF00FF79C4 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
