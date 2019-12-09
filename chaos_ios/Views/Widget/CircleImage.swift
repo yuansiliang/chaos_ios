@@ -13,9 +13,9 @@ struct CircleImage: View {
     var body: some View {
         Image(imgName).resizable()
             .clipShape(Circle())
-            .overlay(
-
-                Circle().stroke(Color.white, lineWidth: 1))
+//            .overlay(
+//
+//                Circle().stroke(Color.white, lineWidth: 1))
 
             .shadow(radius: 3)
     }

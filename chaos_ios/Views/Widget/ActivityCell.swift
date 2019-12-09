@@ -13,6 +13,35 @@ struct ActivityCell : View {
     var timeStamp:String
     var content:String
     var imgName:String
+    
+    @State var isSheet: Bool = false
+    private var share: some View {
+        Button(action: {
+            self.isSheet.toggle()
+        }) {
+//            HStack {
+                Image("ic_share")
+//            }
+//            .frame(width: 30, height: 30)
+        }.actionSheet(isPresented: $isSheet, content: {
+            self.actionSheet
+        })
+    }
+    
+    var actionSheet: ActionSheet {
+        ActionSheet(title: Text("Action"),
+            message: Text("Description"),
+            buttons: [
+                .default(Text("OK"), action: {
+
+                }),
+                .destructive(Text("Delete"), action: {
+
+                })
+            ]
+        )
+    }
+    
     var body: some View {
         VStack(alignment: .leading){
             HStack{
@@ -37,19 +66,24 @@ struct ActivityCell : View {
                     Image("ic_kefu")
                 }
                 
-                VStack(alignment: .leading){
-                    Text(content)
-                    .font(Font.system(size: 15))
-                    .lineLimit(2)
-                    HStack {
-                        Image(imgName)
-                    }
+//                VStack(alignment: .leading){
+//                    Text(content)
+//                    .font(Font.system(size: 15))
+//                    .lineLimit(2)
+//                    HStack {
+//                        Image(imgName)
+//                    }
+//                }
+                NavigationLink(destination: ActivityDetail(nickName:nickName,timeStamp:timeStamp,content:content,imgName:imgName)) {
+                    ActivityRow(content: content,imgName: imgName)
                 }
+                
             }
             .padding(.horizontal, 8)
             Divider()
             HStack{
                 Image("ic_share")
+//                share
                     .padding(.leading,10)
                 Spacer()
                 Image("ic_comment")
